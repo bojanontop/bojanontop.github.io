@@ -3,13 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Geoid</title>
+    <!-- main style-->
     <link rel="stylesheet" href="style.css">
+    <!-- AOS (scroll reveal)-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- scrollreveal.js-->
+
+    <!-- Google font-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Wellfleet&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Wellfleet&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header" id="header"> 
@@ -18,12 +25,12 @@
             <div class="items-menu">
                 <ul>
                     
-                    <li><a href="#">Domov</a></li>
-                    <li><a href="#">Storitve</a></li>
-                    <li><a href="#">Kontakt</a></li>
-                    <li><a href="#">Reference</a></li>
-                    <li><a href="#">Zakonodaja</a></li>
-                    <li><a href="#">Obvestila</a></li>
+                    <li><a href="#" class="underline-hover-effect">Domov</a></li>
+                    <li><a href="#" class="underline-hover-effect">Storitve</a></li>
+                    <li><a href="#" class="underline-hover-effect">Kontakt</a></li>
+                    <li><a href="#" class="underline-hover-effect">Reference</a></li>
+                    <li><a href="#" class="underline-hover-effect">Zakonodaja</a></li>
+                    <li><a href="#" class="underline-hover-effect">Obvestila</a></li>
                 </ul>
             </div>
         </menu>
@@ -31,11 +38,11 @@
     <br>
     <main class="main">
             <br><br><br><br><br><br><br>
-            <div class="div1-main">
+            <div class="div1-main" data-aos="fade-up">
                 <h1>GEOID, Geodetski inženiring d.o.o.</h1>
             </div>
 
-            <div class="div2-main">
+            <div class="div2-main" data-aos="fade-up">
                 <h1>O nas</h1>
                 <img src="./geodetske storitve.jpg" alt="" class="img">
                 <p class="p1-main">GEOID, Geodetski inženiring d.o.o. je vodilno geodetsko podjetje, ki se nahaja na Dimičevi ulici 12, v samem srcu Ljubljane, na Bežigradu. Podjetje ima bogato zgodovino in se ponaša z dovoljenjem za izvajanje geodetskih storitev, ki mu ga je podelilo Ministrstvo za okolje in prostor Republike Slovenije, Geodetska uprava. <br><br>
@@ -49,34 +56,30 @@
             </div>
         </div>
         <div class="div3-main">
-            <h1 id="div3-main-name">Storitve</h1>
-            <div class="div3-main-card">
-                <div class="card">
+            <h1 id="div3-main-name" data-aos="fade-up">Storitve</h1>
+            <div class="div3-main-card" data-aos="fade-up">
+                <div class="card" id="card1" data-aos="fade-right">
+                    <span class="material-symbols-outlined">html</span>
                     <h1>lorem</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, dicta!</p>
                 </div>
-                <div class="card">
+                <div class="card" id="card2">
+                    <span class="material-symbols-outlined">html</span>
                     <h1>lorem</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, suscipit.</p>
                 </div>
-                <div class="card">
+                <div class="card" id="card3">
+                    <span class="material-symbols-outlined">html</span>
                     <h1>lorem</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, necessitatibus!</p>
                 </div>
-                <div class="card">
-                    <h1>lorem</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, rem.</p>
-                </div>
-                <div class="card">
-                    <h1>lorem</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, officiis.</p>
-                </div>
-                <div class="card">
+                <div class="card" id="card4" data-aos="fade-left" >
+                    <span class="material-symbols-outlined">html</span>
                     <h1>lorem</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, aut.</p>
                 </div>
             </div>
-            <p><a href="" id="vec">VEČ</a></p>
+            <p><a href="" id="vec" data-aos="fade-up">VEČ</a></p>
         </div>
 
         <div class="form">
@@ -155,5 +158,14 @@
             </div>
         </div>
     </footer>
+    <!-- javascrpt imported libraries-->
+    <!-- scrollreveal.js-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- AOS (scrollreveal)-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- -->
 </body>
 </html>
