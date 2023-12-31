@@ -5,16 +5,15 @@
 }
 
 header{
-    
+    padding-bottom: 30px;
+    border-bottom: 1px solid black;
 }
 
 .items-menu{
     float: right;
     margin-right: 20px;
     margin-top: -70px;
-    background-color: grey;
     padding: 10px;
-    border: 1px solid grey;
     border-radius: 10px;
 }
 
@@ -27,14 +26,12 @@ header{
     text-decoration: none;
     margin-top: -10px;
     margin-right: 40px;
-    border-left: 3px solid black;
     padding-left: 2px;
     font-size: 2em;
     transition: all 100ms;
 }
 
 .items-menu ul li a:hover{
-    border: 2px solid black;
 }
 
 #logo{
@@ -44,7 +41,7 @@ header{
 
 .div1-main{
     text-align: center;
-    margin-bottom: 10em;
+    margin-bottom: 5.5em;
     font-size: 2em;
     margin-left: 20%;
     margin-right: 20%;
@@ -70,7 +67,82 @@ header{
 
 .div2-main p{
     font-size: 1.25em;
-    margin-left: 40%;
+    margin-left: 50%;
+}
+
+
+.div3-main{
+    padding-top: 150px;
+    background-color: #254fda;
+    padding-bottom: 150px;
+    color: aliceblue;
+}
+
+.div3-main-card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    margin-left: 22%;
+    margin-right: 22%;
+    justify-content: stretch;
+    gap: 40px;
+}
+
+.card{
+    border: 1px solid #0900ff;
+    padding: 20px;
+    height: 150px;
+    background-color: #0900ff;
+    border-radius: 10px;
+    transition: all ease .5s;
+    cursor: pointer;
+}
+
+.card h1{
+    font-size: 3em;
+    margin-bottom: 20px;
+    transition: all ease .5s;
+}
+
+.card p{
+    font-size: 1.2em;
+    transition: all ease .5s;
+}
+
+.card:hover > h1{
+    font-size: 3.4em;
+}
+
+.card:hover > p{
+    font-size: 1.25em;
+}
+
+#div3-main-name{
+    display: grid;
+    justify-items: center;
+    font-size: 4em;
+    margin-bottom: 90px;
+}
+
+#vec{
+    color: white;
+    text-decoration: none;
+    display: grid;
+    justify-items: center;
+    margin-top: 150px;
+    border: 1px solid #0900ff;
+    background-color: #0900ff;
+    border-radius: 10px;
+    margin-left: 45%;
+    margin-right: 45%;
+    padding: 13px;
+    font-size: 2.7em;
+    transition: all ease-in 0.3s;
+}
+
+#vec:hover{
+    padding: 10px;
+    font-size: 3em;
 }
 
 .img{
