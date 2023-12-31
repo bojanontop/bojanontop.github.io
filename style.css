@@ -4,8 +4,11 @@
     font-family: 'Wellfleet', monospace;
 }
 
+
+/* navbar + logo */
+
+
 header{
-    padding-bottom: 30px;
     border-bottom: 1px solid black;
 }
 
@@ -21,6 +24,7 @@ header{
     display: inline;
 }
 
+
 .items-menu ul li a{
     color: black;
     text-decoration: none;
@@ -31,17 +35,43 @@ header{
     transition: all 100ms;
 }
 
-.items-menu ul li a:hover{
-}
-
 #logo{
     margin-top: 40px;
     margin-left: 40px;
 } 
 
+a.underline-hover-effect {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .underline-hover-effect {
+    display: inline-block;
+    padding-bottom: 0.25rem;
+    position: relative;
+  }
+  
+  .underline-hover-effect::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 4px;
+    background-color: #004a96;
+    transition: width 0.25s ease-out;
+  }
+  .underline-hover-effect:hover::before {
+    width: 100%;
+  }
+
+
+
+/* about us*/
+
 .div1-main{
     text-align: center;
-    margin-bottom: 5.5em;
+    margin-bottom: 5.1em;
     font-size: 2em;
     margin-left: 20%;
     margin-right: 20%;
@@ -49,9 +79,6 @@ header{
 
 .div1-main h1{
 }
-
-
-
 
 .div2-main {
     text-align: center;
@@ -70,51 +97,35 @@ header{
     margin-left: 50%;
 }
 
+.img{
+    height: 300px;
+    margin-top: 10px;
+    margin-left: -42em;
+    position: absolute;
+    border: 1px solid white;
+    border-radius: 40% 60% 36% 64% / 48% 35% 65% 52%  ;
+}
+
+
+
+
+/*Storitve*/
 
 .div3-main{
     padding-top: 150px;
-    background-color: #254fda;
+    background-color: #0b529a;
     padding-bottom: 150px;
-    color: aliceblue;
+    color: black;
 }
 
 .div3-main-card{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 2fr);
     margin-left: 22%;
     margin-right: 22%;
     justify-content: stretch;
     gap: 40px;
-}
-
-.card{
-    border: 1px solid #0900ff;
-    padding: 20px;
-    height: 150px;
-    background-color: #0900ff;
-    border-radius: 10px;
-    transition: all ease .5s;
-    cursor: pointer;
-}
-
-.card h1{
-    font-size: 3em;
-    margin-bottom: 20px;
-    transition: all ease .5s;
-}
-
-.card p{
-    font-size: 1.2em;
-    transition: all ease .5s;
-}
-
-.card:hover > h1{
-    font-size: 3.4em;
-}
-
-.card:hover > p{
-    font-size: 1.25em;
 }
 
 #div3-main-name{
@@ -122,16 +133,66 @@ header{
     justify-items: center;
     font-size: 4em;
     margin-bottom: 90px;
+    color: white;
 }
 
+    /* card*/
+    .card{
+        border: 1px solid white;
+        padding: 20px;
+        height: 400px;
+        background-color: white;
+        border-radius: 10px;
+        transition: all ease .4s;
+        cursor: pointer;
+        box-shadow: 0 0 15px -1px rgba(0, 0, 0, 0.619);
+    
+    }
+
+    .card h1{
+        font-size: 3em;
+        margin-bottom: 40px;
+        margin-top: 20px;
+    }
+
+    .card p{
+        font-size: 1.2em;
+    }
+
+    #card1:hover{
+        background-color: #1073b7;
+        border-color: #1073b7;
+        color: white;
+    }
+
+    #card2:hover{
+        background-color: #189dd2;
+        border-color: #189dd2;
+        color: white;
+    }
+
+    #card3:hover{
+        background-color: #1db4d5;
+        border-color: #1db4d5;
+        color: white;
+    }
+
+    #card4:hover{
+        background-color: #becb29;
+        border-color: #becb29;
+        color: white;
+    }
+
+
+
 #vec{
-    color: white;
+    color: black;
     text-decoration: none;
     display: grid;
     justify-items: center;
     margin-top: 150px;
-    border: 1px solid #0900ff;
-    background-color: #0900ff;
+    border: 1px solid white;
+    background-color: white;
     border-radius: 10px;
     margin-left: 45%;
     margin-right: 45%;
@@ -141,18 +202,14 @@ header{
 }
 
 #vec:hover{
-    padding: 10px;
-    font-size: 3em;
+    border-color: #1073b7;
+    background-color: #1073b7;
+    color: white;
 }
 
-.img{
-    height: 300px;
-    margin-top: 10px;
-    margin-left: -42em;
-    position: absolute;
-    border: 1px solid white;
-    border-radius: 40% 60% 36% 64% / 48% 35% 65% 52%  ;
-}
+
+/* Kontakt */
+
 
 .form{
     border: 1px solid #2556da;
