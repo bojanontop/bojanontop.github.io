@@ -1,3 +1,17 @@
+@keyframes shake {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    25%, 75% {
+      transform: translateX(-5px);
+    }
+    50% {
+      transform: translateX(5px);
+    }
+}
+
+
+
 *{
     padding: 0;
     margin: 0;
@@ -153,13 +167,18 @@ a.underline-hover-effect {
     }
 
     .card h1{
-        font-size: 3em;
+        font-size: 1vw;
         margin-bottom: 40px;
         margin-top: 20px;
+        padding-top: 30px;
     }
 
     .card p{
         font-size: 1.2em;
+    }
+
+    .card i{
+        padding-top: 20px;
     }
     #card1, #card2, #card3, #card4{
         transition: all ease .4s;
@@ -189,6 +208,9 @@ a.underline-hover-effect {
         color: white;
     }
 
+.card:hover > span {
+    animation: shake 0.5s ease-in-out infinite;
+}
 
 
 #vec{
@@ -214,6 +236,9 @@ a.underline-hover-effect {
     color: white;
 }
 
+.img1{
+    font-size: 40px;
+}
 
 /* Kontakt */
 
@@ -226,6 +251,7 @@ a.underline-hover-effect {
     display: grid;
     justify-items: center;
     background-color: ;
+    margin-bottom: 100px;
 }
 
 .form input[type=text], textarea{
@@ -243,4 +269,8 @@ a.underline-hover-effect {
 @media only screen and (max-width: 1600px) {
     /* za zaslone (slika)*/
     
+}
+
+footer{
+    background-color: #004a96;
 }
