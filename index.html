@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
+    <!-- -->
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Geoid</title>
@@ -8,17 +12,24 @@
     <link rel="alternate" hreflang="sl" href="jonpecar.me/en" />
     <!-- main style-->
     <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
     <!-- AOS (scroll reveal)-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- scrollreveal.js-->
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <!-- TypeIt -->
+    <script src="/path/to/typeit/source"></script>
+    <script src="https://unpkg.com/typeit@8.0.2/dist/index.umd.js"></script>
     <!-- Font awesome-->
     <script src="https://kit.fontawesome.com/691efd176d.js" crossorigin="anonymous"></script>
     <!-- Swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Google font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Inter&family=Space+Mono&family=Wellfleet&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Inter&family=Space+Mono&family=Wellfleet&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header class="header" id="header"> 
@@ -41,7 +52,7 @@
     <main class="main">
             <br><br><br><br><br><br><br>
             <div class="div1-main" data-aos="fade-up">
-                <h1>GEOID, Geodetski inženiring d.o.o.</h1>
+                <h1 id="type-it"></h1>
             </div>
 
             <div class="div2-main" data-aos="fade-up">
@@ -91,13 +102,19 @@
                 <li><a href=""></a></li>
             </ul>
         </div>
-        <div class="form">
-            <h1>Kontakt</h1><br><br>
-            <label for="">E-mail/tel.: <br><input type="text" placeholder="janze.poljansek@delo.si/070434122" id="mail text"></label><br>
-            <label for="">Ime: <br><input type="text" placeholder="Janze" id="fname text"></label><br>
-            <label for="">Priimek: <br><input type="text" placeholder="Poljansek" id="sname text"></label><br>
-            <label for="">Sporočilo: <br><textarea id="text" name="subject" placeholder="Vpiši sporočilo..." style="height:200px"></textarea></label>
-            <button>Pošlji</button>
+        <div class="div5-main">
+            <div class="form">
+                <h1>Kontakt</h1><br><br>
+                <label for="">E-mail/tel.: <br><br><input type="text" placeholder="janze.poljansek@delo.si/070434122" id="mail text"></label><br><br>
+                <label for="">Ime: <br><br><input type="text" placeholder="Janze" id="fname text"></label><br><br>
+                <label for="">Priimek: <br><br><input type="text" placeholder="Poljansek" id="sname text"></label><br><br>
+                <label for="">Sporočilo: <br><br><textarea id="text msg" name="subject" placeholder="Vpiši sporočilo..." style="height:200px"></textarea></label><br>
+                <input type="button" value="Pošlji" id="saveBtn">
+            </div>
+            <div class="form1">
+            <i class="fa-solid fa-envelope "></i>
+            </div>
+            
         </div>
     </main>
     <footer>
@@ -181,6 +198,7 @@
         AOS.init();
     </script>
     <!-- Swiper-->
+    
 
 </body>
 </html>
