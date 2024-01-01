@@ -106,6 +106,7 @@ a.underline-hover-effect {
 .div2-main h1{
     font-size: 3em;
     margin-bottom: 100px;
+    margin-left: 50%;
 }
 
 .div2-main p{
@@ -242,29 +243,76 @@ a.underline-hover-effect {
 
 /* Kontakt */
 
-
-.form{
-    border: 1px solid black;
+.div5-main{
     margin-left: 22%;
     margin-right: 22%;
-    margin-top: 200px;
+    text-align: center;
+    margin-bottom: 20em;
+    margin-top: 20em;
     display: grid;
-    justify-items: center;
-    background-color: ;
-    margin-bottom: 100px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 2fr);
+    justify-items: stretch;
+}
+
+.div5-main i{
+    margin-top: 60%;
+    font-size: 20em;
+}
+
+.form{
+}
+
+.form h1{
+    font-size: 3em;
+    text-align: end;
+    margin-right: -15%;
+    margin-bottom: 15%;
+}
+
+.form label{
+    font-size: 2em;
+}
+
+.form textarea{
+    height: 100px;
+    resize: none;
 }
 
 .form input[type=text], textarea{
-    
+    width: 60%;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 10px;
 }
 
 ::placeholder{
+    padding-left: 10px;
+    padding-top: 3px;
+    font-size: 1.5em;
+}
+
+.form input[type=button] {
+    background-color: #004a96;
     color: white;
+    font-size: 2em;
+    border: 1px solid #004a96;
+    border-radius: 52px;
+    padding: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 29px;
+    margin-top: 11%;
+    width: 60%;
+    transition: all ease .5s;
 }
 
-
-.form button{
+.form input[type=button]:hover{
+    background-color: white;
+    color: #004a96;
+    font-weight: 1000;
 }
+
 
 @media only screen and (max-width: 1600px) {
     /* za zaslone (slika)*/
