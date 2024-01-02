@@ -313,12 +313,18 @@ a.underline-hover-effect {
     font-weight: 1000;
 }
 
-
-@media only screen and (max-width: 1600px) {
-    /* za zaslone (slika)*/
-    
-}
+/* Footer */
 
 footer{
     background-color: #004a96;
 }
+
+@media only screen and (max-width: 1600px) {
+    *{
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    
+}
+
+
