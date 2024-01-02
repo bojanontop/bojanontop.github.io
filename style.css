@@ -18,6 +18,7 @@ header{
     margin-top: -70px;
     padding: 10px;
     border-radius: 10px;
+    transition: all ease .5s;
 }
 
 .items-menu ul li{
