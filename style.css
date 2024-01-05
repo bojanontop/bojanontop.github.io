@@ -388,20 +388,20 @@ footer{
         text-align: center;
         margin-bottom: 5.1em;
         font-size: 1.2em;
-        margin-left: 15%;
-        margin-right: 10%;
+        margin-left: 8%;
+        margin-right: 8%;
         letter-spacing: 3px;
     }
 
     .div2-main h1{
         font-size: 2em;
         margin-bottom: 100px;
-        margin-left: 15%;
+        margin-left: 0;
     }
     
     .div2-main p{
         font-size: .6em;
-        margin-left: 10%;
+        margin-left: 0;
     }
         
 }
