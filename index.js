@@ -10,6 +10,7 @@ jQuery(document).ready(function($) {
   .go();
 });
 
+// Contact form
 
 saveBtn.addEventListener('click', () => {
   console.log('Button clicked');
@@ -33,4 +34,18 @@ saveBtn.addEventListener('click', () => {
 });
 
 
+// Menu
 
+function toggleMenu() {
+  document.getElementById("items-menu-mobile").classList.toggle('items-menu-mobile')
+  document.getElementById("items-menu-mobile").id = "items-menu-mobile-open"
+  document.getElementById("menuIcon").style.display = "none"
+  document.getElementById("closeIcon").style.display = "block"
+}
+
+function closeMenu() {
+  document.getElementById("items-menu-mobile-open").classList.toggle('items-menu-mobile')
+  document.getElementById("items-menu-mobile-open").id = "items-menu-mobile"
+  document.getElementById("menuIcon").style.display = "block"
+  document.getElementById("closeIcon").style.display = "none"
+}
