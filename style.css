@@ -383,6 +383,16 @@ footer{
     .card h1{
         font-size: 1.5em;
     }
+
+    .div2-main h1{
+        font-size: 2em;
+        margin-bottom: 100px;
+        margin-left: 25%;
+    }
+    
+    .div2-main p{
+        font-size: .6em;
+        
 }
 
 @media only screen and (max-width: 800px) {
