@@ -20,7 +20,6 @@
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <!-- TypeIt -->
-    <script src="/path/to/typeit/source"></script>
     <script src="https://unpkg.com/typeit@8.0.2/dist/index.umd.js"></script>
     <!-- Font awesome-->
     <script src="https://kit.fontawesome.com/691efd176d.js" crossorigin="anonymous"></script>
@@ -37,8 +36,9 @@
         <a href="index.html"><img src="./logo.png" alt="" id="logo"></a>
         <menu class="menu" id="menu">
             <div class="items-menu">
+                <i class="fa-solid fa-bars fa-2xl icon" id="menuIcon" onclick="toggleMenu()"></i>
+                <i class="fa-solid fa-bars-staggered fa-2xl icon1" id="closeIcon" onclick="closeMenu()"></i>
                 <ul>
-                    
                     <li><a href="index.html" class="underline-hover-effect">Domov</a></li>
                     <li><a href="#" class="underline-hover-effect">Storitve</a></li>
                     <li><a href="#" class="underline-hover-effect">Kontakt</a></li>
@@ -46,6 +46,17 @@
                     <li><a href="#" class="underline-hover-effect">Zakonodaja</a></li>
                     <li><a href="en.html" class="underline-hover-effect" style="color: #004a96;">English</a></li>
                 </ul>
+            </div>
+            <div class="" id="items-menu-mobile">
+                <ul>
+                    <li><a href="index.html" class="underline-hover-effect">Domov</a></li>
+                    <li><a href="#" class="underline-hover-effect">Storitve</a></li>
+                    <li><a href="#" class="underline-hover-effect">Kontakt</a></li>
+                    <li><a href="#" class="underline-hover-effect">Reference</a></li>
+                    <li><a href="#" class="underline-hover-effect">Zakonodaja</a></li>
+                    <li><a href="en.html" class="underline-hover-effect" style="color: #004a96;">English</a></li>
+                </ul>
+
             </div>
         </menu>
     </header>
@@ -57,6 +68,7 @@
             </div>
 
             <div class="div2-main" data-aos="fade-up">
+                <span class="mq-value"></span>
                 <h1>O nas</h1>
                 <img src="./geodetske storitve.jpg" alt="" class="img">
                 <p class="p1-main">GEOID, Geodetski inženiring d.o.o. je vodilno geodetsko podjetje, ki se nahaja na Dimičevi ulici 12, v samem srcu Ljubljane, na Bežigradu. Podjetje ima bogato zgodovino in se ponaša z dovoljenjem za izvajanje geodetskih storitev, ki mu ga je podelilo Ministrstvo za okolje in prostor Republike Slovenije, Geodetska uprava. <br><br>
