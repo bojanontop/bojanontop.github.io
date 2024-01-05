@@ -34,11 +34,9 @@ header{
     display: none;
 }
 
-
 .items-menu ul li{
     display: inline;
 }
-
 
 .items-menu ul li a{
     color: black;
@@ -92,9 +90,6 @@ a.underline-hover-effect {
     margin-left: 20%;
     margin-right: 20%;
     letter-spacing: 3px;
-}
-
-.div1-main h1{
 }
 
 .div2-main {
@@ -261,9 +256,6 @@ a.underline-hover-effect {
     font-size: 20em;
 }
 
-.form{
-}
-
 .form h1{
     font-size: 3em;
     text-align: end;
@@ -380,6 +372,17 @@ footer{
         position: absolute;
         margin-top: -10px;
     }
+
+    #logo{
+        margin-top: 30px;
+        margin-left: 40px;
+        margin-bottom: 10px;
+        width: 200px;
+    }
+
+    .card h1{
+        font-size: 1.5em;
+    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -388,6 +391,13 @@ footer{
         margin-right: 5%;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(4, 2fr);
+    }
+
+    #logo{
+        margin-top: 30px;
+        margin-left: 20px;
+        margin-bottom: 10px;
+        width: 200px;
     }
     
 }
