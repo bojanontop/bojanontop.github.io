@@ -2,7 +2,7 @@
 jQuery(document).ready(function($) {
   new TypeIt("#type-it", {
       strings: ["GEOID, Geodetski inženiring d.o.o."],
-      speed: 100,
+      speed: 200,
       waitUntilVisible: true,
       loop: false,
       html: true,
