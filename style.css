@@ -376,6 +376,49 @@ footer{
 }
 
 
+
+/* Reference.html */
+
+.reference{
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 10em;
+}
+
+.reference h1{
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 2em;
+    font-size: 3em;
+    margin-bottom: 3em;
+
+}
+
+.ref-menu{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(4, auto);
+    gap: 10px;
+    justify-items: center;
+
+}
+
+.ref{
+    border: 1px solid black;
+    width: 70%;
+    padding: 20px;
+    border-radius: 10px;
+    transition: all ease .4s;
+    height: 200px;
+}
+
+.ref a{
+    font-size: 2em;
+    color: black;
+    text-decoration: none;
+    transition: all ease .4s;
+}
+
 @media only screen and (max-width: 1800px) {
     .div3-main-card{
         margin-left: 10%;
@@ -515,6 +558,12 @@ footer{
         margin-left: 20px;
         margin-bottom: 10px;
         width: 200px;
+    }
+
+    .div2-main p{
+        margin-left: 0;
+        margin-right: 0;
+        font-size: .7em;
     }
     
 }
