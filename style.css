@@ -239,21 +239,38 @@ a.underline-hover-effect {
 
 /* Kontakt */
 
-.div5-main{
-    margin-left: 22%;
-    margin-right: 22%;
+.div5-main-main{
+    margin-left: 10%;
+    margin-right: 10%;
     text-align: center;
-    margin-bottom: 20em;
-    margin-top: 20em;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Photos/construction-plans-with-helmet-drawing-tools-blueprints.jpg");
+    background-size: cover;
+    border: url("./Photos/construction-plans-with-helmet-drawing-tools-blueprints.jpg") solid 1px;
+    border-radius: 20px;
+
+}
+
+.div5-main{
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    padding-left: 10%;
+    padding-right: 10%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 2fr);
     justify-items: stretch;
+    backdrop-filter: blur(5px);
 }
 
 .div5-main i{
     margin-top: 60%;
     font-size: 20em;
+    color: white;
 }
 
 .form h1{
@@ -261,10 +278,13 @@ a.underline-hover-effect {
     text-align: end;
     margin-right: -15%;
     margin-bottom: 15%;
+    margin-top: 2em;
+    color: white;
 }
 
 .form label{
     font-size: 2em;
+    color: white;
 }
 
 .form textarea{
@@ -275,7 +295,7 @@ a.underline-hover-effect {
 .form input[type=text], textarea{
     width: 60%;
     height: 40px;
-    border: 1px solid black;
+    border: 1px solid white;
     border-radius: 10px;
 }
 
@@ -305,6 +325,8 @@ a.underline-hover-effect {
     color: #004a96;
     font-weight: 1000;
 }
+
+
 
 /* Footer */
 
@@ -428,6 +450,11 @@ footer{
     #menuIcon{
         display: none;
     }
+
+
+    .div5-main i{
+        font-size: 15em;
+    }
     
 }
 
@@ -440,6 +467,31 @@ footer{
     .items-menu ul li a{
         font-size: 1.5em;
     }
+    .div5-main{
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .div5-main i{
+        font-size: 15em;
+        margin-top: 100%;
+        margin-left: .5em;
+    }
+
+    .form{
+        margin-bottom: 2em;
+    }
+    
+    
+    .form input[type=text], textarea{
+        width: 100%;
+    }
+    
+    .form input[type=button] {
+        width: 100%;
+    }
+    
     
 }
 
@@ -524,6 +576,10 @@ footer{
         justify-items: stretch;
     }
 
+    .div5-main i{
+        display: none;
+    }
+
     .form h1{
         font-size: 3em;
         text-align: center;
@@ -542,6 +598,10 @@ footer{
 
     .img{
         display: none;
+    }
+
+    .div5-main{
+        height: 95em;
     }
 }
 
@@ -569,7 +629,7 @@ footer{
     ::placeholder{
         padding-left: 10px;
         padding-top: 3px;
-        font-size: 1em;
+        font-size: 1.5em;
     }
 
     .form input[type=text], textarea{
@@ -577,6 +637,32 @@ footer{
         height: 40px;
         border: 1px solid black;
         border-radius: 10px;
+    }
+
+    .div5-main-main{
+        margin-left: 2%;
+        margin-right: 2%;
+        text-align: center;
+        margin-bottom: 2em;
+        margin-top: 2em;
+    }
+    .div5-main i{
+        font-size: 15em;
+        margin-top: 100%;
+        margin-left: .5em;
+    }
+
+    .form{
+        margin-bottom: 2em;
+    }
+    
+    
+    .form input[type=text], textarea{
+        width: 100%;
+    }
+    
+    .form input[type=button] {
+        width: 100%;
     }
     
 }
