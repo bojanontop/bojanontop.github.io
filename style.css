@@ -249,6 +249,7 @@ a.underline-hover-effect {
     background-size: cover;
     border: url("./Photos/construction-plans-with-helmet-drawing-tools-blueprints.jpg") solid 1px;
     border-radius: 20px;
+    transition: all ease .5s;
 
 }
 
@@ -265,6 +266,7 @@ a.underline-hover-effect {
     grid-template-rows: repeat(1, 2fr);
     justify-items: stretch;
     backdrop-filter: blur(5px);
+    transition: all ease .5s;
 }
 
 .div5-main i{
@@ -285,11 +287,13 @@ a.underline-hover-effect {
 .form label{
     font-size: 2em;
     color: white;
+    transition: all ease .5s;
 }
 
 .form textarea{
     height: 100px;
     resize: none;
+    transition: all ease .5s;
 }
 
 .form input[type=text], textarea{
@@ -297,6 +301,7 @@ a.underline-hover-effect {
     height: 40px;
     border: 1px solid white;
     border-radius: 10px;
+    transition: all ease .5s;
 }
 
 ::placeholder{
@@ -332,6 +337,13 @@ a.underline-hover-effect {
 
 footer{
     background-color: #004a96;
+    padding-top: 20em;
+    border: 1px solid #004a96;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-top: 10em;
+    margin-left: .5%;
+    margin-right: .5%;
 }
 
 
@@ -454,6 +466,16 @@ footer{
 
     .div5-main i{
         font-size: 15em;
+        margin-top: 110%;
+        margin-left: .5em;
+    }
+
+    .form input[type=text], textarea{
+        width: 100%;
+    }
+    
+    .form input[type=button] {
+        width: 100%;
     }
     
 }
@@ -601,7 +623,7 @@ footer{
     }
 
     .div5-main{
-        height: 95em;
+        height: 85em;
     }
 }
 
@@ -665,4 +687,16 @@ footer{
         width: 100%;
     }
     
+}
+
+@media only screen and (max-width: 500px){
+    #vec{
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    
+    .div5-main{
+        height: 75em;
+    }
+
 }
