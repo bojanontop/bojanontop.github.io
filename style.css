@@ -700,3 +700,9 @@ footer{
     }
 
 }
+
+@media only screen and (max-width: 400px){
+    .div5-main{
+        height: 85em;
+    }
+}
