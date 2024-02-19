@@ -204,5 +204,29 @@
     <!-- Swiper-->
     
 
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyAGRMRcqdzAEci7wO_S803yetKspMCRXNw",
+          authDomain: "geoid-d8394.firebaseapp.com",
+          projectId: "geoid-d8394",
+          storageBucket: "geoid-d8394.appspot.com",
+          messagingSenderId: "19623824791",
+          appId: "1:19623824791:web:0d07e9d7a1a6f371a388d2",
+          measurementId: "G-1150EQSBSY"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+
 </body>
 </html>
