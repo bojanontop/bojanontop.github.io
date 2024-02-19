@@ -359,67 +359,56 @@ footer{
     background-size: cover;
 }
 
-.storitve ul{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: stretch;
-    justify-items: center;
-    margin-left: 10%;
-    margin-right: 10%;
-    gap: 100px;
-    margin-top: 7em;
-    margin-bottom: 5em;
+.str-h2{
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+    transform: translate(50%);
+    font-size: 2.5em;
+    border-bottom: #004a96 solid 4px;
+    width: fit-content;
 }
 
-.cardos{
-    text-align: center;
-    padding: 20px;
-    width: 19em;
-    padding-bottom: 30px;
-    transition: border, background-color ease .7s;
-    border-color: #004a96;
+.str .cardos{
+    border: white solid 1px;
+    width: 80%;
     border-radius: 10px;
+    text-align: center;
+    height: 15em;
+    margin-bottom: 6em;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-.cardos-link{
-    text-decoration: none;
+.cardos a{
     color: black;
-    transition: all ease .7s;
+    text-decoration: none;
 }
 
 .cardos p{
-    width: 60%;
-    transform: translate(35%);
+    width: 50%;
+    transform: translate(50%);
 }
 
-.cardos-link h2{
-    font-size: 1.5em;
-    margin-bottom: 10px;
+.cardos a h2{
     margin-top: 20px;
-    border: #004a96 solid;
-    border-width: 0 0 5px 0;
-    width: 30%;
-    transform: translateX(117%);
-    transition: all ease .7s;
+    margin-bottom: 20px;
+    transition: all ease .4s;
+    border-bottom: #004a96 solid 3px;
+    height: 100px;
+    width: 70%;
+    transform: translate(20%);
 }
 
-.cardos:hover{
-    padding-bottom: calc(-1px);
-    background-color: #004a96; 
-    border: 1px solid #004a96; 
-    border-radius: 10px;
+.str{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    border-bottom: #004a96 solid 1px;
+    width: 80%;
+    transform: translate(10%);
 }
-
-.cardos:hover > .cardos-link{
-    color: white;
-    border-color: white;
-}
-
-.cardos:hover > .cardos-link h2{
-    border-color: white;
-    color: white;
-}
-
 
 
 /* Reference.html */
