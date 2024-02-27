@@ -270,6 +270,10 @@ a.underline-hover-effect {
     transition: all ease .5s;
 }
 
+.form{
+    text-align: center;
+}
+
 .form h1{
     font-size: 3em;
     text-align: end;
