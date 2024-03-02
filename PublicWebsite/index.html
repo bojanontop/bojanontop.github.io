@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    
+    <!-- -->
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geoid</title>
+    <!-- Language -->
+    <link rel="alternate" hreflang="en" href="github.bojanontop/en.html" />
+    <link rel="alternate" hreflang="sl" href="" />
+    <!-- main style-->
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <!-- AOS (scroll reveal)-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- scrollreveal.js-->
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <!-- TypeIt -->
+    <script src="https://unpkg.com/typeit@8.0.2/dist/index.umd.js"></script>
+    <!-- Font awesome-->
+    <script src="https://kit.fontawesome.com/691efd176d.js" crossorigin="anonymous"></script>
+    <!-- Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Inter&family=Space+Mono&family=Wellfleet&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="header" id="header"> 
+        <a href="index.html"><img src="./logo.png" alt="" id="logo"></a>
+        <menu class="menu" id="menu">
+            <div class="items-menu">
+                <i class="fa-solid fa-bars fa-2xl icon" id="menuIcon" onclick="toggleMenu()"></i>
+                <i class="fa-solid fa-bars-staggered fa-2xl icon1" id="closeIcon" onclick="closeMenu()"></i>
+                <ul>
+                    <li><a href="index.html" class="underline-hover-effect">Domov</a></li>
+                    <li><a href="storitve.html" class="underline-hover-effect">Storitve</a></li>
+                    <li><a href="kontakt.html" class="underline-hover-effect">Kontakt</a></li>
+                    <li><a href="#" class="underline-hover-effect">Reference</a></li>
+                    <li><a href="#" class="underline-hover-effect">Zakonodaja</a></li>
+                    <li><a href="en.html" class="underline-hover-effect" style="color: #004a96;">English</a></li>
+                </ul>
+            </div>
+        </menu>
+    </header>
+    <br>
+    <main class="main">
+            <br><br><br><br><br><br><br>
+            <div class="div1-main" data-aos="fade-up">
+                <h1 id="type-it"></h1>
+            </div>
+
+            <div class="div2-main" data-aos="fade-up">
+                <h1>O nas</h1>
+                <img src="./Photos/geodetske storitve.jpg" alt="" class="img">
+                <p class="p1-main">GEOID, Geodetski inženiring d.o.o. je vodilno geodetsko podjetje, ki se nahaja na Dimičevi ulici 12, v samem srcu Ljubljane, na Bežigradu. Podjetje ima bogato zgodovino in se ponaša z dovoljenjem za izvajanje geodetskih storitev, ki mu ga je podelilo Ministrstvo za okolje in prostor Republike Slovenije, Geodetska uprava. <br><br>
+
+                    Zaradi visokih strokovnih standardov je GEOID ponosni član Inženirske zbornice Slovenije, kjer ga najdemo v registru geodetskih podjetij pod evidenčno številko 0092. To potrjuje zavezanost k visokim etičnim standardom, strokovnosti in stalnemu izobraževanju. <br><br>
+                    
+                    Osnovni namen podjetja GEOID je zagotoviti celovite geodetske rešitve, prilagojene potrebam strank. S svojo ekipo visoko usposobljenih strokovnjakov pokrivajo širok spekter geodetskih inženirskih storitev, vključno s katastrom, izmere zemljišč, prostorskim načrtovanjem in drugimi povezanimi področji. <br><br>
+                    
+                    Njihova lokacija v Ljubljani omogoča učinkovito in hitro odzivanje na potrebe strank v mestu in okolici. GEOID je znan po natančnosti, zanesljivosti ter predanosti doseganju optimalnih rezultatov za svoje stranke.
+                </p>
+            </div>
+        </div>
+        <div class="div3-main">
+            <h1 id="div3-main-name" data-aos="fade-up">Storitve</h1>
+            <div class="div3-main-card" data-aos="fade-up">
+                <div class="card" id="card1" data-aos="fade-up">
+                    <i class="fa-solid fa-house fa-2xl"></i>
+                    <h1>Kataster stavb</h1>
+                    <p>Kataster stavb je seznam vseh stavb v določeni oblasti s podatki o lastnikih in lastnostih stavb, pomemben za evidenco nepremičnin in urbanistično načrtovanje.</p>
+                </div>
+                <div class="card" id="card2">
+                    <i class="fa-solid fa-earth-americas fa-2xl"></i>
+                    <h1>Zemljiški kataster</h1>
+                    <p>Zemljiški kataster je register z informacijami o parcelah, mejah in lastnikih na določenem območju, ključen za urejanje lastniških pravic in prostorsko načrtovanje.</p>
+                </div>
+                <div class="card" id="card3">
+                    <i class="fa-solid fa-map fa-2xl"></i>
+                    <h1>Geodetski načrt</h1>
+                    <p>Geodetski načrt je dokument z natančnimi geografskimi podatki o območju, uporaben za gradnjo, urejanje zemljišč in druge geodetske namene.</p>
+                </div>
+                <div class="card" id="card4" data-aos="fade-up" >
+                    <i class="fa-solid fa-arrow-up fa-2xl"></i>
+                    <h1>Opazovanja deformacij</h1>
+                    <p>Opazovanje deformacij pomeni spremljanje sprememb oblike ali strukture materiala, pomembno za varnost objektov in zemeljskih formacij.</p>
+                </div>
+            </div>
+            <p><a href="storitve.html" id="vec" data-aos="fade-up">VEČ</a></p>
+        </div>
+        <div class="div4-main">
+            <ul>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+            </ul>
+        </div>
+        <div class="div5-main-main" data-aos="fade-up">
+            <div class="div5-main" data-aos="fade-up">
+                    <div class="form" data-aos="fade-up">
+                        <h1>Kontakt</h1><br><br>
+                        <label for="">E-mail<br><br><input type="text" placeholder="janze.poljansek@delo.si/070434122" id="mail text"></label><br><br>
+                        <label for="">telefon <br><br><input type="text" placeholder="070 434 122" id="mail text"></label><br><br>
+                        <label for="">Ime: <br><br><input type="text" placeholder="Janze" id="fname text"></label><br><br>
+                        <label for="">Priimek: <br><br><input type="text" placeholder="Poljansek" id="sname text"></label><br><br>
+                        <label for="">Sporočilo: <br><br><textarea id="text msg" name="subject" placeholder="Vpiši sporočilo..." style="height:200px"></textarea></label><br>
+                        <input type="button" value="Pošlji" id="saveBtn">
+                    </div>
+                    <div class="form1">
+                        <i class="fa-solid fa-envelope "></i>
+                    </div>
+                
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="list">
+            <div class="list-item1">
+                <ul>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                </ul>
+            </div>
+            <div class="list-item2">
+                <ul>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                </ul>
+            </div>
+            <div class="list-item3">
+                <ul>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                </ul>
+            </div>
+            <div class="list-item4">
+                <ul>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    
+    <!-- javascrpt imported libraries-->
+    <!-- scrollreveal.js-->
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- AOS (scrollreveal)-->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- Swiper-->
+    
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyAGRMRcqdzAEci7wO_S803yetKspMCRXNw",
+          authDomain: "geoid-d8394.firebaseapp.com",
+          projectId: "geoid-d8394",
+          storageBucket: "geoid-d8394.appspot.com",
+          messagingSenderId: "19623824791",
+          appId: "1:19623824791:web:0d07e9d7a1a6f371a388d2",
+          measurementId: "G-1150EQSBSY"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+
+</body>
+</html>
