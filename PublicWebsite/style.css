@@ -255,8 +255,8 @@ a.underline-hover-effect {
 }
 
 .div5-main{
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
     text-align: center;
     margin-bottom: 2em;
     margin-top: 2em;
@@ -270,10 +270,8 @@ a.underline-hover-effect {
     transition: all ease .5s;
 }
 
-.div5-main i{
-    margin-top: 60%;
-    font-size: 20em;
-    color: white;
+.form{
+    text-align: center;
 }
 
 .form h1{
