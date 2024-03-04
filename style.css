@@ -1,0 +1,710 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+    list-style-type: none;
+}
+
+
+/* navbar + logo */
+
+
+header{
+    border-bottom: 1px solid black;
+}
+
+#menuIcon{
+    display: none;
+}
+
+#closeIcon{
+    display: none;
+}
+
+.items-menu{
+    float: right;
+    margin-right: 20px;
+    margin-top: -70px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all ease .5s;
+}
+
+#items-menu-mobile{
+    display: none;
+}
+
+.items-menu ul li{
+    display: inline;
+}
+
+.items-menu ul li a{
+    color: black;
+    text-decoration: none;
+    margin-top: 5px;
+    margin-right: 30px;
+    padding-left: 2px;
+    font-size: 1.5em;
+    transition: all 100ms;
+}
+
+#logo{
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    height: 3em;
+}
+
+a.underline-hover-effect {
+    text-decoration: none;
+    color: inherit;
+}
+
+.underline-hover-effect {
+    display: inline-block;
+    padding-bottom: 0.25rem;
+    position: relative;
+}
+
+.underline-hover-effect::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 4px;
+    background-color: #004a96;
+    transition: width 0.25s ease-out;
+}
+.underline-hover-effect:hover::before {
+    width: 105%;
+}
+
+
+
+/* about us*/
+
+.div1-main{
+    text-align: center;
+    margin-bottom: 5.1em;
+    font-size: 2em;
+    margin-left: 20%;
+    margin-right: 20%;
+    letter-spacing: 3px;
+}
+
+.div2-main {
+    text-align: center;
+    margin-left: 22%;
+    margin-right: 22%;
+    margin-bottom: 300px;
+}
+
+.div2-main h1{
+    font-size: 3em;
+    margin-bottom: 100px;
+    margin-left: 50%;
+}
+
+.div2-main p{
+    font-size: 1.25em;
+    margin-left: 50%;
+}
+
+.img{
+    height: 300px;
+    margin-top: 10px;
+    margin-left: -42em;
+    position: absolute;
+    border: 1px solid white;
+    border-radius: 40% 60% 36% 64% / 48% 35% 65% 52%  ;
+}
+
+
+
+
+/*Storitve*/
+
+.div3-main{
+    padding-top: 150px;
+    background-color: #0b529a;
+    padding-bottom: 150px;
+    color: black;
+}
+
+.div3-main-card{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 2fr);
+    justify-content: stretch;
+    margin-left: 13.5%;
+    margin-right: 10%;
+}
+
+#div3-main-name{
+    display: grid;
+    justify-items: center;
+    font-size: 4em;
+    margin-bottom: 90px;
+    color: white;
+    letter-spacing: 5px;
+}
+
+/* card*/
+.card{
+    border: 1px solid white;
+    padding: 20px;
+    height: 400px;
+    width: 70%;
+    background-color: white;
+    border-radius: 10px;
+    transition: all ease .4s;
+    cursor: pointer;
+    box-shadow: 0 0 15px -1px rgba(0, 0, 0, 0.619);
+
+}
+
+.card h1{
+    font-size: 1vw;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    padding-top: 30px;
+}
+
+.card p{
+    font-size: 1.2em;
+}
+
+.card i{
+    padding-top: 20px;
+}
+#card1, #card2, #card3, #card4{
+    transition: all ease .4s;
+}
+
+#card1:hover{
+    background-color: #1073b7;
+    border-color: #1073b7;
+    color: white;
+}
+
+#card2:hover{
+    background-color: #189dd2;
+    border-color: #189dd2;
+    color: white;
+}
+
+#card3:hover{
+    background-color: #1db4d5;
+    border-color: #1db4d5;
+    color: white;
+}
+
+#card4:hover{
+    background-color: #becb29;
+    border-color: #becb29;
+    color: white;
+}
+
+.card:hover > span {
+    animation: shake 0.5s ease-in-out infinite;
+}
+
+
+#vec{
+    color: black;
+    text-decoration: none;
+    display: grid;
+    justify-items: center;
+    margin-top: 150px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 15px -1px rgba(0, 0, 0, 0.619);
+    margin-left: 45%;
+    margin-right: 45%;
+    padding: 13px;
+    font-size: 2.7em;
+    transition: all ease-in 0.3s;
+}
+
+#vec:hover{
+    border-color: #1073b7;
+    background-color: #1073b7;
+    color: white;
+}
+
+.img1{
+    font-size: 40px;
+}
+
+/* Kontakt */
+
+.div5-main-main{
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("./Photos/construction-plans-with-helmet-drawing-tools-blueprints.jpg");
+    background-size: cover;
+    border: url("./Photos/construction-plans-with-helmet-drawing-tools-blueprints.jpg") solid 1px;
+    border-radius: 20px;
+    transition: all ease .5s;
+
+}
+
+.div5-main{
+    text-align: center;
+    margin-left: 30%;
+    width: 40%;
+}
+
+.form{
+    text-align: center;
+}
+
+.form h1{
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 15%;
+    margin-top: 2.5em;
+    padding-top: 1.5em;
+    color: white;
+}
+
+.form label{
+    font-size: 2em;
+    color: white;
+    transition: all ease .5s;
+}
+
+.form textarea{
+    height: 100px;
+    resize: none;
+    transition: all ease .5s;
+}
+
+.form input[type=text], textarea, input[type=email], input[type=tel]{
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+
+.form input[type=submit] {
+    background-color: #004a96;
+    color: white;
+    font-size: 2em;
+    border: 1px solid #004a96;
+    border-radius: 52px;
+    padding: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 2em;
+    margin-top: 11%;
+    width: 60%;
+    transition: all ease .5s;
+}
+
+.form input[type=button]:hover{
+    background-color: white;
+    color: #004a96;
+    font-weight: 1000;
+}
+
+
+
+/* Footer */
+
+footer{
+    background-color: #004a96;
+    padding-top: 20em;
+    border: 1px solid #004a96;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-top: 10em;
+    margin-left: .5%;
+    margin-right: .5%;
+}
+
+
+/* Storitve.html */
+
+.storitve h1{
+    padding-top: 3.5em;
+    padding-bottom: 3.5em;
+    font-size: 4em;
+    color: #ccc;
+    text-align: center;
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.8)), url("./Photos/pexels-anamul-rezwan-1216544.jpg");
+    text-shadow: 2px 1px 2px white;
+    letter-spacing: 3px;
+    background-size: cover;
+}
+
+.str-h2{
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+    transform: translate(50%);
+    font-size: 2.5em;
+    border-bottom: #004a96 solid 4px;
+    width: fit-content;
+}
+
+.str .cardos{
+    border: white solid 1px;
+    width: 80%;
+    border-radius: 10px;
+    text-align: center;
+    height: 15em;
+    margin-bottom: 6em;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.cardos a{
+    color: black;
+    text-decoration: none;
+}
+
+.cardos p{
+    width: 60%;
+    transform: translate(31.3%);
+}
+
+.cardos a h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: all ease .4s;
+    border-bottom: #004a96 solid 3px;
+    height: 100px;
+    width: 70%;
+    transform: translate(20%);
+}
+
+.str{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    border-bottom: #004a96 solid 1px;
+    width: 80%;
+    transform: translate(10%);
+}
+
+
+/* Reference.html */
+
+.reference{
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 10em;
+}
+
+.reference h1{
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 2em;
+    font-size: 3em;
+    margin-bottom: 3em;
+
+}
+
+.ref-menu{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(4, auto);
+    gap: 10px;
+    justify-items: center;
+
+}
+
+.ref{
+    border: 1px solid black;
+    width: 70%;
+    padding: 20px;
+    border-radius: 10px;
+    transition: all ease .4s;
+    height: 200px;
+}
+
+.ref a{
+    font-size: 2em;
+    color: black;
+    text-decoration: none;
+    transition: all ease .4s;
+}
+
+@media only screen and (max-width: 1800px) {
+    .div3-main-card{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    #menuIcon{
+        display: none;
+    }
+
+
+    .div5-main i{
+        font-size: 15em;
+        margin-top: 110%;
+        margin-left: .5em;
+    }
+
+    .div5-main{
+        padding-left: 0;
+    }
+
+    .form input[type=text], textarea{
+        width: 100%;
+    }
+
+    .form input[type=button] {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 1400px) {
+    .div3-main-card{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .items-menu ul li a{
+        font-size: 1.5em;
+    }
+    .div5-main{
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .div5-main i{
+        font-size: 15em;
+        margin-top: 100%;
+        margin-left: .5em;
+    }
+
+    .form{
+        margin-bottom: 2em;
+    }
+
+
+    .form input[type=text], textarea{
+        width: 100%;
+    }
+
+    .form input[type=button] {
+        width: 100%;
+    }
+
+
+}
+
+@media only screen and (max-width: 1200px) {
+    .div3-main-card{
+        margin-left: 5%;
+        margin-right: 5%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 2fr);
+    }
+    .items-menu ul li {
+        display: none;
+    }
+
+    #menuIcon{
+        display: block;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+
+
+    #closeIcon{
+        display: none;
+        margin-right: 25px;
+        margin-top: 10px;
+    }
+
+
+    .items-menu-mobile{
+        display: block;
+        text-decoration: none;
+        border: 1px solid black;
+        background-color: white;
+        padding: 10px;
+        margin-left: 82%;
+        font-size: 1.5em;
+        position: absolute;
+        margin-top: -10px;
+    }
+
+    #logo{
+        margin-top: 30px;
+        margin-left: 40px;
+        margin-bottom: 10px;
+        width: 200px;
+    }
+
+    .card h1{
+        font-size: 1.5em;
+    }
+
+    .div1-main{
+        text-align: center;
+        margin-bottom: 5.1em;
+        font-size: 1.2em;
+        margin-left: 8%;
+        margin-right: 8%;
+        letter-spacing: 3px;
+    }
+
+    .div2-main h1{
+        font-size: 2em;
+        margin-bottom: 100px;
+        margin-left: 0;
+    }
+
+    .div2-main p{
+        font-size: 1em;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .div5-main{
+        margin-left: 5%;
+        margin-right: 5%;
+        text-align: center;
+        margin-bottom: 20em;
+        margin-top: 20em;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 2fr);
+        justify-items: stretch;
+    }
+
+    .div5-main i{
+        display: none;
+    }
+
+    .form h1{
+        font-size: 3em;
+        text-align: center;
+        margin-right: 0;
+        margin-bottom: 15%;
+    }
+
+    #vec{
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+
+    .img{
+        display: none;
+    }
+
+    .div5-main{
+        height: 100em;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .div3-main-card{
+        margin-left: 5%;
+        margin-right: 5%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 2fr);
+    }
+
+    #logo{
+        margin-top: 30px;
+        margin-left: 20px;
+        margin-bottom: 10px;
+        width: 200px;
+    }
+
+    .div2-main p{
+        margin-left: 0;
+        margin-right: 0;
+        font-size: .8em;
+    }
+
+    .form input[type=text], textarea{
+        width: 100%;
+        height: 40px;
+        border: 1px solid black;
+        border-radius: 10px;
+        font-size: 14px;
+    }
+
+    .div5-main-main{
+        margin-left: 2%;
+        margin-right: 2%;
+        text-align: center;
+        margin-bottom: 2em;
+        margin-top: 2em;
+    }
+    .div5-main i{
+        font-size: 15em;
+        margin-top: 100%;
+        margin-left: .5em;
+    }
+
+    .div5-main{
+        margin-left: 5%;
+        margin-right: 7%;
+        height: 100em;
+    }
+
+    .form{
+        margin-bottom: 2em;
+    }
+
+
+    .form input[type=text], textarea{
+        width: 100%;
+    }
+
+    .form input[type=button] {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 500px){
+    #vec{
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    .div5-main{
+        height: 95em;
+    }
+
+    .div2-main{
+        margin-left: 5%;
+        margin-right: 5%;
+
+    }
+
+    .div2-main p{
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 1em;
+
+    }
+
+}
+
+@media only screen and (max-width: 400px){
+    .div5-main{
+        height: 95em;
+    }
+}

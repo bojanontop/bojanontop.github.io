@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+#Main-h1{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column; /* WTF je to?*/
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+
+
+#aname,
+#apass
+{
+    width: 300px;
+    height: 40px;
+    margin-bottom: 20px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#asubmit{
+    width: 250px;
+    border:  1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 50px;
+    transition: all ease .4s;
+}
+
+#asubmit:hover{
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+form #aname{
+    margin-bottom: 100px;
+}
+
+.form-list{
+    border: 1px solid #000;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 20px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.form-list-item{
+    width: 75%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+p{
+    width: 50%;
+}

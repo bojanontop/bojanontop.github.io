@@ -1,23 +1,63 @@
 <?php
-session_start();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Process form data
-    $fname = $_POST["fname"];
-    $pass = $_POST["pass"];
+    $_SESSION["sesion"] = True;
+    $sesion = $_SESSION["sesion"];
+    $name = $_POST["name"];
+    $sname = $_POST["sname"];
+    $email = $_POST["email"];
+    $tel = $_POST["tel"];
+    $subject = $_POST["subject"];
 
-    // Store form data in session variables
-    $_SESSION['fname'] = $fname;
-    $_SESSION['pass'] = $pass;
+    /*$sqlUsername = "Admin";
+    $sqlPassword = "";
 
-    // Redirect user to main.php if they haven't accessed it via form submission
-    if (!isset($_SESSION['form_submitted'])) {
-        header("Location: ../PublicWebsite/index.html");
-        exit();
+
+    $conn = new mysqli("localhost", $sqlUsername, $sqlPassword, "admin");
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }else{
+        $sql = "SELECT * FROM admin;";
+        $adminResult = mysqli_query($conn, $sql);
+        $adminResultCheck = mysqli_num_rows($result);
+
+        if ($adminResultCheck > 0) {
+            $username = $adminResult["Username"];
+            $password = $adminResult["Password"];
+            $savecode = $adminResult["Savecode"];
+        }
+
+    }*/
+
+
+    $conn = new mysqli("localhost", "root", "", "main");
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }else{
+        $smtm = $conn->prepare("INSERT INTO main (name, sname, email, tel, subject) VALUES (?, ?, ?, ?, ?)");
+        $smtm->bind_param("sssss", $name, $sname, $email, $tel, $subject);
+        $smtm->execute();
+        echo "Succesfully sent!";
+        $smtm->close();
+        $conn->close();
     }
-    header("Location: ../PublicWebsite/index.html");
 
-    // Clear the flag indicating form submission
-    unset($_SESSION['form_submitted']);
+
+
+    $string_query = http_build_query(array(
+        "name" => $name,
+        "sname" => $sname,
+        "email" => $email,
+        "phone" => $phone,
+        "subject" => $subject,
+        "sesion" => $sesion,
+        "savecode" => $savecode,
+        "password"=> $password,
+        "username" => $username
+    ));
+
+    header("Location: main.php?" . $string_query);
+    exit;
 }
+
 ?>
